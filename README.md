@@ -1,10 +1,8 @@
-motion-sparkinspector
----------------------
+#motion-sparkinspector
 
 use SparkInspector (http://www.sparkinspector.com) in RubyMotion apps
 
-**usage:**
-
+##usage
 * install SparkInspector (/Applications)  
 * install motion-sparkinspector gem  
   `$ gem install motion-sparkinspector`
@@ -16,7 +14,7 @@ use SparkInspector (http://www.sparkinspector.com) in RubyMotion apps
 
 * have fun !  
 
-**thanks:** 
-* @clayallsopp - gem idea and tips
-* @bengotow - SparkInspector and howto https://gist.github.com/bengotow/5552322
-* @lrz and @rubymotion team - RubyMotion
+##thanks
+* [@clayallsopp](http://twitter.com/clayallsopp) - gem idea and tips
+* [@bengotow](http://twitter.com/bengotow) - SparkInspector and howto https://gist.github.com/bengotow/5552322
+* [@lrz](http://twitter.com/lrz) and [@rubymotion](http://twitter.com/rubymotion) team - RubyMotion
