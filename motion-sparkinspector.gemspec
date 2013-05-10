@@ -4,9 +4,9 @@ Gem::Specification.new do |gem|
   gem.name        = 'motion-sparkinspector'
   gem.summary     = "Use SparkInspector in RubyMotion apps"
   gem.description = "Use SparkInspector in RubyMotion apps"
-  gem.version     = '0.0.1'
+  gem.version     = '0.0.2'
   gem.date        = '2013-05-10'
-  gem.homepage    = 'http://rubygems.org/gems/hola'
+  gem.homepage    = 'https://github.com/TBD/motion-sparkinspector'
 
   gem.files       = ["lib/motion-sparkinspector.rb"]
 end
