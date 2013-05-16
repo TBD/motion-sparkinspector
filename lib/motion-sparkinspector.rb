@@ -22,7 +22,7 @@ end
 
 Motion::Project::App.setup do |app|
 	app.development do
-		if File.exist? '/Applications/Spark Inspector.appx'
+		if File.exist? '/Applications/Spark Inspector.app'
 			app.vendor_project('/Applications/Spark Inspector.app/Contents/Resources/Frameworks/SparkInspector.framework', :static, :products => ['SparkInspector'], :force_load => true, :headers_dir => 'Headers')
 			app.libs += ['/usr/lib/libz.dylib']
 			app.frameworks += ['QuartzCore']
