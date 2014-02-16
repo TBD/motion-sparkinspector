@@ -1,3 +1,5 @@
+require 'motion-sparkinspector/config'
+
 unless defined?(Motion::Project::Config)
 	raise "This file must be required within a RubyMotion project Rakefile."
 end
@@ -22,8 +24,9 @@ end
 
 Motion::Project::App.setup do |app|
 	app.development do
-		if File.exist? '/Applications/Spark Inspector.app'
-			app.vendor_project('/Applications/Spark Inspector.app/Contents/Resources/Frameworks/SparkInspector.framework', :static, :products => ['SparkInspector'], :force_load => true, :headers_dir => 'Headers')
+		sparkinspector_app = File.join(app.sparkinspector_path, 'Spark Inspector.app')
+		if File.exist? sparkinspector_app
+			app.vendor_project("#{sparkinspector_app}/Contents/Resources/Frameworks/SparkInspector.framework", :static, :products => ['SparkInspector'], :force_load => true, :headers_dir => 'Headers')
 			app.libs += ['/usr/lib/libz.dylib']
 			app.frameworks += ['QuartzCore']
 
